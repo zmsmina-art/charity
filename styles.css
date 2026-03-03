@@ -283,7 +283,7 @@ ul { list-style: none; }
 }
 .hero__scroll-hint {
   position: absolute;
-  bottom: var(--space-sm);
+  bottom: var(--space-xs);
   left: 50%;
   transform: translateX(-50%);
   display: flex;
