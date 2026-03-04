@@ -1087,4 +1087,7 @@ ul { list-style: none; }
 
   .donate__card { padding: var(--space-md); }
   .donate__amounts { grid-template-columns: 1fr 1fr; }
+
+  .newsletter__form { flex-direction: column; }
+  .newsletter__form .btn { width: 100%; justify-content: center; }
 }
