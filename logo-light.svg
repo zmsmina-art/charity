@@ -1,6 +1,7 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 340">
-  <!-- E -->
-  <path d="M30 30h130v30H70v95h75v30H70v95h92v30H30V30Z" fill="white"/>
-  <!-- B -->
-  <path d="M210 30h90c40 0 70 28 70 65 0 28-16 50-40 60 30 8 50 36 50 65 0 42-34 70-76 70h-94V30Zm40 30v100h48c28 0 48-20 48-50s-20-50-48-50h-48Zm0 130v90h54c30 0 52-22 52-45s-22-45-52-45h-54Z" fill="white"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 80">
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&amp;display=swap');
+    text { font-family: 'Playfair Display', 'Georgia', 'Times New Roman', serif; }
+  </style>
+  <text x="60" y="62" text-anchor="middle" font-size="72" font-weight="700" fill="white" letter-spacing="-2">EB</text>
 </svg>
