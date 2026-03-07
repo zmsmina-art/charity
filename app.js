@@ -1,5 +1,5 @@
 /* ══════════════════════════════════════════════════════
-   ÉCLAT BEGINNINGS — Frontend Logic
+   ECLAT BEGINNINGS — Frontend Logic
    ══════════════════════════════════════════════════════ */
 
 // ─── Scroll Reveal ───

@@ -1,5 +1,5 @@
 /* ══════════════════════════════════════════════════════
-   ÉCLAT BEGINNINGS — Charity Website
+   ECLAT BEGINNINGS — Charity Website
    Aesthetic: Blue & Gold — Trustworthy, Warm
    ══════════════════════════════════════════════════════ */
 
@@ -133,9 +133,9 @@ ul { list-style: none; }
   letter-spacing: -0.01em;
 }
 .nav__logo-icon {
-  width: 40px;
-  height: 32px;
-  color: var(--color-sage);
+  width: auto;
+  height: 36px;
+  object-fit: contain;
 }
 .nav__links {
   display: flex;
@@ -956,7 +956,7 @@ ul { list-style: none; }
   color: var(--color-warm-white);
   margin-bottom: var(--space-sm);
 }
-.footer .nav__logo-icon { color: var(--color-sage-light); }
+.footer .nav__logo-icon { height: 40px; }
 .footer__tagline {
   font-size: 0.92rem;
   color: rgba(255, 255, 255, 0.5);
