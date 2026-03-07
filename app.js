@@ -1,5 +1,5 @@
 /* ══════════════════════════════════════════════════════
-   HARBOUR OF HOPE — Frontend Logic
+   ÉCLAT BEGINNINGS — Frontend Logic
    ══════════════════════════════════════════════════════ */
 
 // ─── Scroll Reveal ───
