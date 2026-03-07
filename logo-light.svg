@@ -1,9 +1,6 @@
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 400">
-  <!-- Large E (serif) -->
-  <path d="M62 52h120v22H92v108h78v22H92v120h92v22H62V52Z" fill="white"/>
-  <path d="M56 48h132v8H56V48ZM56 340h104v8H56v-8ZM86 178h84v8H86v-8Z" fill="white"/>
-
-  <!-- Large B (serif) -->
-  <path d="M268 52h80c42 0 74 28 74 68 0 30-18 54-44 64 32 8 54 38 54 70 0 46-36 82-84 82h-80V52Zm30 24v104h50c30 0 54-22 54-52s-24-52-54-52h-50Zm0 128v114h54c34 0 60-26 60-58 0-32-26-56-60-56h-54Z" fill="white"/>
-  <path d="M262 48h94v8h-94V48ZM262 340h88v8h-88v-8Z" fill="white"/>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 440 340">
+  <!-- E -->
+  <path d="M30 30h130v30H70v95h75v30H70v95h92v30H30V30Z" fill="white"/>
+  <!-- B -->
+  <path d="M210 30h90c40 0 70 28 70 65 0 28-16 50-40 60 30 8 50 36 50 65 0 42-34 70-76 70h-94V30Zm40 30v100h48c28 0 48-20 48-50s-20-50-48-50h-48Zm0 130v90h54c30 0 52-22 52-45s-22-45-52-45h-54Z" fill="white"/>
 </svg>
