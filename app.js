@@ -97,6 +97,32 @@ function animateCounter(el) {
   requestAnimationFrame(update);
 }
 
+// ─── Program Detail Toggle ───
+function toggleProgramDetail(id, btn) {
+  const detail = document.getElementById(id);
+  const isOpen = detail.classList.contains('open');
+
+  // Close all open details first
+  document.querySelectorAll('.program-detail.open').forEach((el) => {
+    el.classList.remove('open');
+  });
+
+  // Toggle the clicked one (if it wasn't already open)
+  if (!isOpen) {
+    detail.classList.add('open');
+    // Make inner content visible for reveal animation
+    const inner = detail.querySelector('.program-detail__inner');
+    if (inner) inner.classList.add('visible');
+    // Scroll into view after a brief delay for the animation
+    setTimeout(() => {
+      detail.scrollIntoView({ behavior: 'smooth', block: 'start' });
+    }, 100);
+  }
+}
+
+// Make toggleProgramDetail available globally
+window.toggleProgramDetail = toggleProgramDetail;
+
 // ─── Smooth anchor scrolling with offset ───
 document.querySelectorAll('a[href^="#"]').forEach((anchor) => {
   anchor.addEventListener('click', (e) => {

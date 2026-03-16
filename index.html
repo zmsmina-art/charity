@@ -53,7 +53,7 @@
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/></svg>
           Donate Now
         </a>
-        <a href="#about" class="btn btn--outline btn--lg">Learn More</a>
+        <a href="#programs" class="btn btn--outline btn--lg">Learn More</a>
       </div>
     </div>
     <div class="hero__scroll-hint">
@@ -78,34 +78,20 @@
           services offered in partnership with local organisations in affected communities.
         </p>
       </div>
-      <div class="about__grid">
+      <div class="about__grid about__grid--two">
         <div class="about__card reveal">
           <div class="about__card-icon">
             <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="1.5"/><path d="M24 14V34M14 24H34" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
           </div>
-          <h3>Secondary School Program</h3>
+          <h3>School Program</h3>
           <p>Financial support to underprivileged children for post-primary education, expanding opportunities and improving their future prospects.</p>
         </div>
         <div class="about__card reveal">
           <div class="about__card-icon">
             <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="1.5"/><path d="M24 16C20 16 18 18 18 20C18 24 24 26 24 26C24 26 30 24 30 20C30 18 28 16 24 16Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M20 28C17 29 15 31 15 34H33C33 31 31 29 28 28" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
           </div>
-          <h3>Women Empowerment</h3>
+          <h3>Women's Empowerment</h3>
           <p>Empowering women through skills training, and a variety of economic opportunities to build confidence, improve livelihoods, and strengthen families and communities.</p>
-        </div>
-        <div class="about__card reveal">
-          <div class="about__card-icon">
-            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="1.5"/><path d="M18 30L22 26L26 30L30 18" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
-          </div>
-          <h3>Vocational Training</h3>
-          <p>Apprenticeships and hands-on vocational training at skills centres, enabling youth and adults to gain employable abilities and achieve sustainable livelihoods.</p>
-        </div>
-        <div class="about__card reveal">
-          <div class="about__card-icon">
-            <svg viewBox="0 0 48 48" fill="none"><circle cx="24" cy="24" r="22" stroke="currentColor" stroke-width="1.5"/><path d="M24 14C24 14 18 19 18 24C18 27.314 20.686 30 24 30C27.314 30 30 27.314 30 24C30 19 24 14 24 14Z" stroke="currentColor" stroke-width="2" stroke-linejoin="round"/><path d="M24 22V28M21.5 25H26.5" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-          </div>
-          <h3>Food Programs</h3>
-          <p>Community food programs that support vulnerable families, reducing hunger, and strengthening health and wellbeing in communities.</p>
         </div>
       </div>
     </div>
@@ -131,7 +117,7 @@
           <span class="impact__label">Businesses Assisted<br><small>Across Nigeria</small></span>
         </div>
         <div class="impact__stat reveal">
-          <span class="impact__number" data-target="4">0</span>
+          <span class="impact__number" data-target="2">0</span>
           <span class="impact__label">Program Areas<br><small>Developed</small></span>
         </div>
         <div class="impact__stat reveal">
@@ -149,7 +135,7 @@
         <span class="section-header__eyebrow">What We Do</span>
         <h2 class="section-header__title">Programs that create<br>lasting change</h2>
       </div>
-      <div class="programs__grid">
+      <div class="programs__grid programs__grid--two">
         <article class="programs__card reveal">
           <div class="programs__card-image">
             <div class="programs__card-image-placeholder" style="--hue: 35;">
@@ -158,9 +144,9 @@
           </div>
           <div class="programs__card-body">
             <span class="programs__card-tag">Education</span>
-            <h3>Secondary School Program</h3>
+            <h3>School Program</h3>
             <p>Providing financial assistance as means of encouraging less privileged children to proceed to post primary education at selected institutions.</p>
-            <a href="#" class="programs__card-link">Learn more <span>&rarr;</span></a>
+            <button class="programs__card-link" onclick="toggleProgramDetail('school-detail', this)">Learn more <span>&rarr;</span></button>
           </div>
         </article>
         <article class="programs__card reveal">
@@ -171,37 +157,77 @@
           </div>
           <div class="programs__card-body">
             <span class="programs__card-tag">Women</span>
-            <h3>Women Empowerment</h3>
-            <p>Empowering women through skills training, family planning education, and economic opportunities to strengthen communities from within.</p>
-            <a href="#" class="programs__card-link">Learn more <span>&rarr;</span></a>
+            <h3>Women's Empowerment</h3>
+            <p>Empowering women through skills training, small business assistance, and economic opportunities to strengthen communities from within.</p>
+            <button class="programs__card-link" onclick="toggleProgramDetail('women-detail', this)">Learn more <span>&rarr;</span></button>
           </div>
         </article>
-        <article class="programs__card reveal">
-          <div class="programs__card-image">
-            <div class="programs__card-image-placeholder" style="--hue: 140;">
-              <svg viewBox="0 0 64 64" fill="none"><rect x="14" y="22" width="36" height="28" rx="2" stroke="currentColor" stroke-width="2"/><path d="M14 30H50" stroke="currentColor" stroke-width="2"/><path d="M24 14V22M40 14V22" stroke="currentColor" stroke-width="2" stroke-linecap="round"/><path d="M24 38H30V44H24V38Z" stroke="currentColor" stroke-width="2"/></svg>
-            </div>
+      </div>
+
+      <!-- Expandable Program Details -->
+      <div class="program-detail" id="school-detail">
+        <div class="program-detail__inner reveal">
+          <button class="program-detail__close" onclick="toggleProgramDetail('school-detail')" aria-label="Close">&times;</button>
+          <h3>School Program</h3>
+
+          <div class="program-detail__section">
+            <h4>Focus</h4>
+            <p>Programs are offered in partnership with local churches in affected communities.</p>
+            <p>Education, because of its power to reduce poverty, has been our primary focus.</p>
+            <p>Since 2008, we have sponsored over a hundred children with their secondary education. These children would otherwise not have had an opportunity to fund their education.</p>
           </div>
-          <div class="programs__card-body">
-            <span class="programs__card-tag">Capacity Building</span>
-            <h3>Vocational Training</h3>
-            <p>Apprenticeships and practical skills training at vocational centres, empowering youth and adults to achieve sustainable livelihoods.</p>
-            <a href="#" class="programs__card-link">Learn more <span>&rarr;</span></a>
+
+          <div class="program-detail__section">
+            <h4>Education Statistics</h4>
+            <p>According to a 2017 UNICEF report, Nigeria has the largest number of children out of school in the world.</p>
+            <p>10.5 million children are out of school, some, due to cultural factors, but for the rest, due to a lack of financing for publicly funded schools.</p>
           </div>
-        </article>
-        <article class="programs__card reveal">
-          <div class="programs__card-image">
-            <div class="programs__card-image-placeholder" style="--hue: 200;">
-              <svg viewBox="0 0 64 64" fill="none"><path d="M32 12C32 12 18 22 18 36C18 43.7 24.3 50 32 50C39.7 50 46 43.7 46 36C46 22 32 12 32 12Z" stroke="currentColor" stroke-width="2"/><path d="M32 28V42M26 35H38" stroke="currentColor" stroke-width="2" stroke-linecap="round"/></svg>
-            </div>
+
+          <div class="program-detail__section">
+            <h4>Candidate Selection Guidelines</h4>
+            <p>Selection of candidates is made with the assistance of a committee of school representatives and churches in the rural area being represented.</p>
+            <p>Evaluation criteria are based solely on need. Subsequent consideration is still based on need as well as academic performance; extracurricular activities or volunteer/community involvement, and good behavior.</p>
+            <p>Sponsorship Recipients are expected to use the sponsorship in the year it is awarded.</p>
           </div>
-          <div class="programs__card-body">
-            <span class="programs__card-tag">Community</span>
-            <h3>Food Programs</h3>
-            <p>Community-based food programs that improve access to nutritious meals and reduce hunger among vulnerable populations.</p>
-            <a href="#" class="programs__card-link">Learn more <span>&rarr;</span></a>
+
+          <div class="program-detail__section">
+            <h4>Disbursement Guidelines</h4>
+            <p>Payments for school fees are made directly to the schools by our local coordinator.</p>
+            <p>The coordinator also forwards payment of other sponsorship amounts to the student on behalf of Eclat Beginnings.</p>
+            <p>Payment Receipts are provided at the end of each term along with school results.</p>
           </div>
-        </article>
+        </div>
+      </div>
+
+      <div class="program-detail" id="women-detail">
+        <div class="program-detail__inner reveal">
+          <button class="program-detail__close" onclick="toggleProgramDetail('women-detail')" aria-label="Close">&times;</button>
+          <h3>Women's Empowerment</h3>
+
+          <div class="program-detail__section">
+            <h4>Focus</h4>
+            <p>Programs are offered in partnership with local churches in affected communities.</p>
+            <p>Empowering women also empowers their communities and reduces poverty.</p>
+            <p>When women gain access to opportunities, including education or finances to start businesses, they invest in their families, support local economies, and inspire future generations. By uplifting women, we create stronger households, healthier communities, and sustainable pathways out of poverty for everyone.</p>
+          </div>
+
+          <div class="program-detail__section">
+            <h4>Female Economic Statistics</h4>
+            <p>National poverty rates calculated by NWLC based on U.S. Census Bureau reveals that more than one in 10 women aged 18 and older &mdash; over 14.8 million &mdash; lived in poverty in 2024. Poverty rates were particularly high for Black women (17.8 percent), Latinas (15.2 percent), and Native women (19.4 percent). Nearly one in three (30.6 percent) families headed by single women with children were poor in 2024.</p>
+            <p>The latest flagship report from UN Women reveals a staggering 2.0 billion women live in poverty with no access to social protection.</p>
+          </div>
+
+          <div class="program-detail__section">
+            <h4>Candidate Selection Guidelines</h4>
+            <p>Selection of candidates is made with the assistance of a committee of representatives and churches in the rural area being represented.</p>
+            <p>Evaluation criteria are based solely on need.</p>
+          </div>
+
+          <div class="program-detail__section">
+            <h4>Disbursement Guidelines</h4>
+            <p>Payments are disbursed directly to recipient's bank accounts.</p>
+          </div>
+        </div>
       </div>
     </div>
   </section>
@@ -301,48 +327,21 @@
     </div>
   </section>
 
-  <!-- ═══════════════════ VOLUNTEER / GET INVOLVED ═══════════════════ -->
+  <!-- ═══════════════════ PARTNER / GET INVOLVED ═══════════════════ -->
   <section class="volunteer" id="volunteer">
     <div class="container">
       <div class="volunteer__wrapper reveal">
         <div class="volunteer__content">
           <span class="section-header__eyebrow">Get Involved</span>
-          <h2 class="volunteer__title">Volunteers are<br>always welcome</h2>
+          <h2 class="volunteer__title">Partner with us</h2>
           <p class="volunteer__desc">
-            Eclat Beginnings began as a volunteer group in 2008 and that spirit still drives
-            everything we do. Sign up to get involved. Your contribution makes a difference.
+            Since 2008, our charity has been empowering communities and creating lasting change.
+            Whether you're an organization or individual, contact us if you'd like to partner
+            with us to expand impact, uplift lives, and build a brighter, more compassionate
+            future together for those in need.
           </p>
-          <div class="volunteer__roles">
-            <div class="volunteer__role">
-              <span class="volunteer__role-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M3 3h18v18H3z"/><path d="M12 8v8M8 12h8"/></svg>
-              </span>
-              <div>
-                <strong>Fundraise</strong>
-                <span>Organise campaigns &amp; events</span>
-              </div>
-            </div>
-            <div class="volunteer__role">
-              <span class="volunteer__role-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M2 3h6a4 4 0 0 1 4 4v14a3 3 0 0 0-3-3H2z"/><path d="M22 3h-6a4 4 0 0 0-4 4v14a3 3 0 0 1 3-3h7z"/></svg>
-              </span>
-              <div>
-                <strong>Partner</strong>
-                <span>Inquire about how you can become a partner or valued member</span>
-              </div>
-            </div>
-            <div class="volunteer__role">
-              <span class="volunteer__role-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 0 0-3-3.87"/><path d="M16 3.13a4 4 0 0 1 0 7.75"/></svg>
-              </span>
-              <div>
-                <strong>Volunteer</strong>
-                <span>On-the-ground community work</span>
-              </div>
-            </div>
-          </div>
-          <a href="#" class="btn btn--primary btn--lg">
-            Sign Up to Volunteer
+          <a href="#contact" class="btn btn--primary btn--lg">
+            Partner with Us
             <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
           </a>
         </div>
@@ -368,6 +367,37 @@
               <circle cx="40" cy="50" r="4" stroke="currentColor" stroke-width="2"/>
             </svg>
             <span>Assisting Children</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════ CONTACT ═══════════════════ -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact__wrapper reveal">
+        <div class="contact__info">
+          <span class="section-header__eyebrow">Contact Us</span>
+          <h2 class="contact__title">Get in touch</h2>
+          <p class="contact__desc">
+            Interested in partnering with us? Reach out and we'll get back to you.
+          </p>
+          <div class="contact__details">
+            <div class="contact__item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.127.96.361 1.903.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
+              <div>
+                <strong>Partnership Coordinator</strong>
+                <span>Phone number coming soon</span>
+              </div>
+            </div>
+            <div class="contact__item">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <div>
+                <strong>Location</strong>
+                <span>Toronto, Ontario, Canada</span>
+              </div>
+            </div>
           </div>
         </div>
       </div>
@@ -404,18 +434,14 @@
         <div class="footer__col">
           <h4>Programs</h4>
           <ul>
-            <li><a href="#programs">Secondary School Program</a></li>
-            <li><a href="#programs">Women Empowerment</a></li>
-            <li><a href="#programs">Vocational Training</a></li>
-            <li><a href="#programs">Food Programs</a></li>
+            <li><a href="#programs">School Program</a></li>
+            <li><a href="#programs">Women's Empowerment</a></li>
           </ul>
         </div>
         <div class="footer__col">
           <h4>Get Involved</h4>
           <ul>
             <li><a href="#donate">Donate</a></li>
-            <li><a href="#volunteer">Volunteer</a></li>
-            <li><a href="#volunteer">Fundraise</a></li>
             <li><a href="#volunteer">Partner</a></li>
           </ul>
         </div>
@@ -424,7 +450,7 @@
           <ul>
             <li>Toronto, Ontario</li>
             <li>Canada</li>
-            <li><a href="#">Get in Touch</a></li>
+            <li><a href="#contact">Get in Touch</a></li>
           </ul>
         </div>
       </div>
