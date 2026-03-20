@@ -1116,6 +1116,12 @@ ul { list-style: none; }
   transition: color var(--duration) var(--ease-out);
 }
 .footer__col a:hover { color: var(--color-sage-light); }
+.footer__contact-link {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+}
+.footer__contact-link svg { flex-shrink: 0; }
 .footer__bottom {
   display: flex;
   align-items: center;
